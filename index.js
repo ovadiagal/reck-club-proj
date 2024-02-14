@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.post('/webhook', (req, res) => {
   console.log("HELLO!");
   console.log(req.body);
-  res.send('Hello World!');
+  res.send(req.body.challenge);
 });
 
 app.listen(port, () => {
