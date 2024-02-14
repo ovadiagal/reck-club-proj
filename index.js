@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.post('/webhook', (req, res) => {
   console.log("HELLO!");
-  console.log(JSON.stringify(req));
+  console.log('req:', req)
   res.send(req.body.challenge);
 });
 
